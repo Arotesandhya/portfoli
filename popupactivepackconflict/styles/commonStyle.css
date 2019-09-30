@@ -1,0 +1,157 @@
+/***** Css Reset Start *****/
+abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:0 0}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+/***** Css Reset End *****/
+@font-face {
+    font-family: 'VodafoneIdeaRg';
+    src: url(../Assets/fonts/VodafoneRg.eot?#iefix) format('embedded-opentype'), url(../Assets/fonts/VodafoneRg.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'VodafoneIdeaRgBd';
+    src: url(../Assets/fonts/VodafoneRgBd.eot?#iefix) format('embedded-opentype'), url(../Assets/fonts/VodafoneRgBd.ttf) format('truetype')
+}
+
+@font-face {
+
+    font-family: 'VodafoneIdeaLt';
+    src: url(../Assets/fonts/VodafoneLight.eot?#iefix) format('embedded-opentype'), url(../Assets/fonts/VodafoneLight.ttf) format('truetype')
+}
+/* Font Declaration End */
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    font-family: 'VodafoneIdeaRg';
+    background-color: rgba(0, 0, 0, 0.03);
+    font-size: 18px;
+}
+.container {
+    max-width: 1232px;
+    width: 95%;
+   
+} 
+h1{ font-family: 'VodafoneIdeaRg';
+    background-color: rgba(0, 0, 0, 0.03);
+    font-size: 26px;}
+    .font-regular{font-family: 'VodafoneIdeaRg';}
+    .font-regularBold{font-family: 'VodafoneIdeaRgBd';}
+    .font-light{font-family: 'VodafoneIdeaLt';}
+
+/*** Grid Padding Start ***/
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+    padding-right: 8px;
+    padding-left: 8px;
+}
+/*** Grid Padding End ***/
+
+.btn, .btn:hover{color:#272727;
+    padding: 10px 0;} 
+.btn-default, .btn-default:hover{
+    background: #272727;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+.btn-underline, .btn-underline:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* Code for Country Selection Start */
+.countryDetials{display: flex;}
+.square{height: 40px; width: 40px; border: 1px solid #999;}
+.square.countryActive{border-color:orange;}
+.countryDetials .country {padding: 16px;}
+.countryDetials .country ul{list-style-type: none; margin: 0;}
+/* Code for Country Selection Start */
+/**** width Start ****/
+.w-1{
+    width: 16px;
+}
+.w-2{
+    width: 24px;
+}
+.w-3{
+    width: 32px;
+}
+.w-4{
+    width: 40px;
+}
+.w-5{
+    width: 48px;
+}
+.w-6{
+    width: 60px;
+}
+.w-7{
+    width: 64px;
+}
+.w-8{
+    width: 80px;
+}
+.w-9{
+    width: 100px;
+}
+.w-10{
+    width: 128px;
+}
+.w-11{
+    width: 150px;
+}
+.w-12{
+    width: 200px;
+}
+.w-13{
+    width: 256px;
+}
+/**** width Start ****/
+/**** link Start****/
+.primary-link,.primary-link:hover{color:#f37021}
+.secondary-link{color:#e60000}
+/**** link End****/
+/**** borders Start****/
+.border-1{border: 1px solid #333;}
+/**** borders Start****/
+/**** Generic Modal Start****/
+.modal .modal-dialog{max-width: 600px;}
+.modal .modal-title{
+    font-size: 28px; padding:18px 0 8px;
+}
+.modal .modal-header, .modal .modal-body, .modal .modal-footer{
+    padding: 0;
+    border: none;
+}
+.modal .modal-content{padding: 24px;}
+/**** Generic Modal End****/
+@media (max-width: 575.98px) { 
+    .modal{top:unset;}
+    .modal .modal-dialog{ margin: 0;}
+    .modal .modal-content{padding:16px 16px 24px;border-bottom-left-radius: 0; border-bottom-right-radius: 0;}
+    .mv-w-100{width: 100%;}
+    .w-3{
+        width: 16px;
+    }
+}
+/**** Small devices (landscape phones, 576px and up) Start ****/
+
+@media (min-width: 576px) { 
+
+ }
+/**** Small devices (landscape phones, 576px and up) End ****/
+/**** Medium devices (tablets, 768px and up) Start ****/
+@media (min-width: 768px) { 
+
+ }
+/**** Medium devices (tablets, 768px and up) End ****/
+/**** Large devices (desktops, 992px and up) Start ****/
+@media (min-width: 992px) { 
+
+ }
+/**** Large devices (desktops, 992px and up) End ****/
+/**** Extra large devices (large desktops, 1200px and up) Start ****/
+@media (min-width: 1200px) { 
+
+ }
+/**** Extra large devices (large desktops, 1200px and up) End ****/

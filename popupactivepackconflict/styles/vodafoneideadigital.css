@@ -1,0 +1,1592 @@
+@font-face {
+     font-family: 'VodafoneRg';
+     src: url(../Assets/fonts/VodafoneRg.eot?#iefix) format('embedded-opentype'), url(../Assets/fonts/VodafoneRg.ttf) format('truetype');
+}
+ @font-face {
+     font-family: 'VodafoneRgBd';
+     src: url(../Assets/fonts/VodafoneRgBd.eot?#iefix) format('embedded-opentype'), url(../Assets/fonts/VodafoneRgBd.ttf) format('truetype');
+}
+ @font-face {
+     font-family: 'VodafoneLt';
+     src: url(../Assets/fonts/VodafoneLight.eot?#iefix) format('embedded-opentype'), url(../Assets/fonts/VodafoneLight.ttf) format('truetype');
+}
+ @font-face {
+     font-family: IndianRupee;
+     src: url(../Assets/fonts/IndianRupee.ttf);
+}
+ @font-face {
+     font-family: Rupee_Foradian;
+     src: url(../Assets/fonts/Rupee_Foradian.ttf);
+}
+ @font-face {
+     font-family: FontAwesome;
+     src: url(../Assets/fonts/fontawesome-webfont.eot?v=4.7.0);
+     src: url(../Assets/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format('embedded-opentype'), url(../Assets/fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'), url(../Assets/fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'), url(../Assets/fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'), url(../Assets/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg');
+     font-weight: 400;
+     font-style: normal;
+}
+ html, body, .voda_wrapper div, .voda_wrapper span, .voda_wrapper applet, .voda_wrapper object, .voda_wrapper iframe, .voda_wrapper p, .voda_wrapper blockquote, .voda_wrapper pre, .voda_wrapper a, .voda_wrapper abbr, .voda_wrapper acronym, .voda_wrapper address, .voda_wrapper big, .voda_wrapper cite, .voda_wrapper code, .voda_wrapper del, .voda_wrapper dfn, .voda_wrapper em, .voda_wrapper img, .voda_wrapper ins, .voda_wrapper kbd, .voda_wrapper q, .voda_wrapper s, .voda_wrapper samp, .voda_wrapper small, .voda_wrapper strike, .voda_wrapper strong, .voda_wrapper sub, .voda_wrapper sup, .voda_wrapper tt, .voda_wrapper var, .voda_wrapper b, .voda_wrapper u, .voda_wrapper i, .voda_wrapper center, .voda_wrapper dl, .voda_wrapper dt, .voda_wrapper dd, .voda_wrapper ol, .voda_wrapper ul, .voda_wrapper li, .voda_wrapper fieldset, .voda_wrapper form, .voda_wrapper label, .voda_wrapper legend, .voda_wrapper table, .voda_wrapper caption, .voda_wrapper tbody, .voda_wrapper tfoot, .voda_wrapper thead, .voda_wrapper tr, .voda_wrapper th, .voda_wrapper td, .voda_wrapper article, .voda_wrapper aside, .voda_wrapper canvas, .voda_wrapper details, .voda_wrapper embed, .voda_wrapper figure, .voda_wrapper figcaption, .voda_wrapper footer, .voda_wrapper header, .voda_wrapper hgroup, .voda_wrapper menu, .voda_wrapper nav, .voda_wrapper output, .voda_wrapper ruby, .voda_wrapper section, .voda_wrapper summary, .voda_wrapper time, .voda_wrapper mark, .voda_wrapper audio, .voda_wrapper video {
+     font-family: "VodafoneRg";
+}
+ body {
+     width: 100%;
+     overflow-x: hidden;
+     margin: 0;
+     font-size: 1rem;
+     font-weight: 400;
+     line-height: 1.5;
+     color: #212529;
+     text-align: left;
+     background-color: #fff;
+}
+ .voda_wrapper .dropdown-item:active, .voda_wrapper .dropdown-item:focus, .voda_wrapper .dropdown-item:hover, .voda_wrapper .list-group-item:focus, .voda_wrapper .list-group-item:hover, .voda_wrapper .nav-link:focus, .voda_wrapper .nav-link:hover, .voda_wrapper .navbar-brand:focus, .voda_wrapper .navbar-brand:hover, .voda_wrapper .navbar-toggler:focus, .voda_wrapper .navbar-toggler:hover, a {
+     text-decoration: none;
+}
+ .voda_wrapper .nav, .voda_wrapper .row {
+     -ms-flex-wrap: wrap;
+}
+ .voda_wrapper .dropdown {
+     position: relative;
+}
+ .voda_wrapper .dropdown-menu, .voda_wrapper .nav, .voda_wrapper .navbar-nav {
+     list-style: none;
+}
+ .voda_wrapper .btn:not(:disabled):not(.disabled), .voda_wrapper .close:not(:disabled):not(.disabled), .voda_wrapper .navbar-toggler:not(:disabled):not(.disabled), .voda_wrapper .page-link:not(:disabled):not(.disabled) {
+     cursor: pointer;
+}
+ .voda_wrapper .page-link:hover{
+     color:#333;
+}
+ .voda_wrapper .fade:not(.show) {
+     opacity: 0;
+}
+ .voda_wrapper .fa {
+     display: inline-block;
+     font: normal normal normal 14px/1 FontAwesome;
+     font-size: inherit;
+     text-rendering: auto;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+}
+ .voda_wrapper .fa-angle-right:before {
+     content: "\f105";
+}
+ .voda_wrapper .fa-angle-up:before {
+     content: "\f106";
+}
+ .voda_wrapper .sr-only {
+     margin: -1px;
+}
+ .voda_wrapper ::after,.voda_wrapper ::before {
+     box-sizing: border-box;
+}
+ @-ms-viewport {
+     width:device-width;
+}
+ .voda_wrapper nav {
+     display: block;
+}
+
+ .voda_wrapper [tabindex="-1"]:focus {
+     outline: 0;
+}
+ .voda_wrapper ul {
+     margin-top: 0;
+     margin-bottom: 1rem;
+}
+ .voda_wrapper ul ul {
+     margin-bottom: 0;
+}
+ .voda_wrapper a {
+     background-color: transparent;
+     -webkit-text-decoration-skip: objects;
+}
+ .voda_wrapper a:hover {
+     color: #fff;
+}
+ .voda_wrapper a:not([href]):not([tabindex]), .voda_wrapper a:not([href]):not([tabindex]):focus, .voda_wrapper a:not([href]):not([tabindex]):hover {
+     color: inherit;
+     text-decoration: none;
+}
+ .voda_wrapper a:not([href]):not([tabindex]):focus {
+     outline: 0;
+}
+ .voda_wrapper img {
+     vertical-align: middle;
+     border-style: none;
+}
+ .voda_wrapper button {
+     border-radius: 0;
+     overflow: visible;
+}
+ .voda_wrapper button,select {
+     margin: 0;
+     font-family: inherit;
+     font-size: inherit;
+     line-height: inherit;
+     text-transform: none;
+}
+ .voda_wrapper button,html [type=button] {
+     -webkit-appearance: button;
+     -moz-appearance: button;
+}
+ .voda_wrapper [type=button]::-moz-focus-inner, .voda_wrapper button::-moz-focus-inner {
+     padding: 0;
+     border-style: none;
+}
+ .voda_wrapper ::-webkit-file-upload-button {
+     font: inherit;
+     -webkit-appearance: button;
+     -moz-appearance: button;
+}
+ .voda_wrapper .row {
+     display: -ms-flexbox;
+     display: flex;
+     flex-wrap: wrap;
+     margin-right: -15px;
+     margin-left: -15px;
+}
+ .voda_wrapper .btn:not(:disabled):not(.disabled).active, .voda_wrapper .btn:not(:disabled):not(.disabled):active {
+     background-image: none;
+}
+ .voda_wrapper .btn-primary:not(:disabled):not(.disabled).active, .voda_wrapper .btn-primary:not(:disabled):not(.disabled):active {
+     color: #fff;
+     background-color: #0062cc;
+     border-color: #005cbf;
+}
+ .voda_wrapper .btn-primary:not(:disabled):not(.disabled).active:focus, .voda_wrapper .btn-primary:not(:disabled):not(.disabled):active:focus {
+     box-shadow: 0 0 0 .2rem rgba(0,123,255,.5);
+}
+ .voda_wrapper .btn-secondary:not(:disabled):not(.disabled).active, .voda_wrapper .btn-secondary:not(:disabled):not(.disabled):active {
+     color: #fff;
+     background-color: #545b62;
+     border-color: #4e555b;
+}
+ .voda_wrapper .btn-secondary:not(:disabled):not(.disabled).active:focus, .voda_wrapper .btn-secondary:not(:disabled):not(.disabled):active:focus {
+     box-shadow: 0 0 0 .2rem rgba(108,117,125,.5);
+}
+ .voda_wrapper .btn-success:not(:disabled):not(.disabled).active, .voda_wrapper .btn-success:not(:disabled):not(.disabled):active {
+     color: #fff;
+     background-color: #1e7e34;
+     border-color: #1c7430;
+}
+ .voda_wrapper .btn-success:not(:disabled):not(.disabled).active:focus, .voda_wrapper .btn-success:not(:disabled):not(.disabled):active:focus {
+     box-shadow: 0 0 0 .2rem rgba(40,167,69,.5);
+}
+ .voda_wrapper .btn-info:not(:disabled):not(.disabled).active, .voda_wrapper .btn-info:not(:disabled):not(.disabled):active {
+     color: #fff;
+     background-color: #117a8b;
+     border-color: #10707f;
+}
+ .voda_wrapper .btn-info:not(:disabled):not(.disabled).active:focus, .voda_wrapper .btn-info:not(:disabled):not(.disabled):active:focus {
+     box-shadow: 0 0 0 .2rem rgba(23,162,184,.5);
+}
+ .voda_wrapper .btn-warning:not(:disabled):not(.disabled).active, .voda_wrapper .btn-warning:not(:disabled):not(.disabled):active {
+     color: #212529;
+     background-color: #d39e00;
+     border-color: #c69500;
+}
+ .voda_wrapper .btn-warning:not(:disabled):not(.disabled).active:focus, .voda_wrapper .btn-warning:not(:disabled):not(.disabled):active:focus {
+     box-shadow: 0 0 0 .2rem rgba(255,193,7,.5);
+}
+ .voda_wrapper .btn-danger:not(:disabled):not(.disabled).active, .voda_wrapper .btn-danger:not(:disabled):not(.disabled):active {
+     color: #fff;
+     background-color: #bd2130;
+     border-color: #b21f2d;
+}
+ .voda_wrapper .btn-danger:not(:disabled):not(.disabled).active:focus, .voda_wrapper .btn-danger:not(:disabled):not(.disabled):active:focus {
+     box-shadow: 0 0 0 .2rem rgba(220,53,69,.5);
+}
+ .voda_wrapper .btn-light:not(:disabled):not(.disabled).active, .voda_wrapper .btn-light:not(:disabled):not(.disabled):active {
+     color: #212529;
+     background-color: #dae0e5;
+     border-color: #d3d9df;
+}
+ .voda_wrapper .btn-light:not(:disabled):not(.disabled).active:focus, .voda_wrapper .btn-light:not(:disabled):not(.disabled):active:focus {
+     box-shadow: 0 0 0 .2rem rgba(248,249,250,.5);
+}
+ .voda_wrapper .btn-dark:not(:disabled):not(.disabled).active, .voda_wrapper .btn-dark:not(:disabled):not(.disabled):active {
+     color: #fff;
+     background-color: #1d2124;
+     border-color: #171a1d;
+}
+ .voda_wrapper .btn-dark:not(:disabled):not(.disabled).active:focus, .voda_wrapper .btn-dark:not(:disabled):not(.disabled):active:focus {
+     box-shadow: 0 0 0 .2rem rgba(52,58,64,.5);
+}
+ .voda_wrapper .btn-outline-primary:not(:disabled):not(.disabled).active, .voda_wrapper .btn-outline-primary:not(:disabled):not(.disabled):active {
+     color: #fff;
+     background-color: #007bff;
+     border-color: #007bff;
+}
+ .voda_wrapper .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .voda_wrapper .btn-outline-primary:not(:disabled):not(.disabled):active:focus {
+     box-shadow: 0 0 0 .2rem rgba(0,123,255,.5);
+}
+ .voda_wrapper .btn-outline-secondary:not(:disabled):not(.disabled).active, .voda_wrapper .btn-outline-secondary:not(:disabled):not(.disabled):active {
+     color: #fff;
+     background-color: #6c757d;
+     border-color: #6c757d;
+}
+ .voda_wrapper .btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .voda_wrapper .btn-outline-secondary:not(:disabled):not(.disabled):active:focus {
+     box-shadow: 0 0 0 .2rem rgba(108,117,125,.5);
+}
+ .voda_wrapper .btn-outline-success:not(:disabled):not(.disabled).active, .voda_wrapper .btn-outline-success:not(:disabled):not(.disabled):active {
+     color: #fff;
+     background-color: #28a745;
+     border-color: #28a745;
+}
+ .voda_wrapper .btn-outline-success:not(:disabled):not(.disabled).active:focus, .voda_wrapper .btn-outline-success:not(:disabled):not(.disabled):active:focus {
+     box-shadow: 0 0 0 .2rem rgba(40,167,69,.5);
+}
+ .voda_wrapper .btn-outline-info:not(:disabled):not(.disabled).active, .voda_wrapper .btn-outline-info:not(:disabled):not(.disabled):active {
+     color: #fff;
+     background-color: #17a2b8;
+     border-color: #17a2b8;
+}
+ .voda_wrapper .btn-outline-info:not(:disabled):not(.disabled).active:focus, .voda_wrapper .btn-outline-info:not(:disabled):not(.disabled):active:focus {
+     box-shadow: 0 0 0 .2rem rgba(23,162,184,.5);
+}
+ .voda_wrapper .btn-outline-warning:not(:disabled):not(.disabled).active, .voda_wrapper .btn-outline-warning:not(:disabled):not(.disabled):active {
+     color: #212529;
+     background-color: #ffc107;
+     border-color: #ffc107;
+}
+ .voda_wrapper .btn-outline-warning:not(:disabled):not(.disabled).active:focus, .voda_wrapper .btn-outline-warning:not(:disabled):not(.disabled):active:focus {
+     box-shadow: 0 0 0 .2rem rgba(255,193,7,.5);
+}
+ .voda_wrapper .btn-outline-danger:not(:disabled):not(.disabled).active, .voda_wrapper .btn-outline-danger:not(:disabled):not(.disabled):active {
+     color: #fff;
+     background-color: #dc3545;
+     border-color: #dc3545;
+}
+ .voda_wrapper .btn-outline-danger:not(:disabled):not(.disabled).active:focus, .voda_wrapper .btn-outline-danger:not(:disabled):not(.disabled):active:focus {
+     box-shadow: 0 0 0 .2rem rgba(220,53,69,.5);
+}
+ .voda_wrapper .btn-outline-light:not(:disabled):not(.disabled).active, .voda_wrapper .btn-outline-light:not(:disabled):not(.disabled):active {
+     color: #212529;
+     background-color: #f8f9fa;
+     border-color: #f8f9fa;
+}
+ .voda_wrapper .btn-outline-light:not(:disabled):not(.disabled).active:focus, .voda_wrapper .btn-outline-light:not(:disabled):not(.disabled):active:focus {
+     box-shadow: 0 0 0 .2rem rgba(248,249,250,.5);
+}
+ .voda_wrapper .btn-outline-dark:not(:disabled):not(.disabled).active, .voda_wrapper .btn-outline-dark:not(:disabled):not(.disabled):active {
+     color: #fff;
+     background-color: #343a40;
+     border-color: #343a40;
+}
+ .voda_wrapper .btn-outline-dark:not(:disabled):not(.disabled).active:focus, .voda_wrapper .btn-outline-dark:not(:disabled):not(.disabled):active:focus {
+     box-shadow: 0 0 0 .2rem rgba(52,58,64,.5);
+}
+ .voda_wrapper .fade {
+     transition: opacity .15s linear;
+}
+
+.voda_wrapper .container-margin-auto {
+	margin: 0 auto;
+}
+
+ @media screen and (prefers-reduced-motion:reduce) {
+     .voda_wrapper .fade{
+         transition: none;
+    }
+}
+ .voda_wrapper .dropdown-menu {
+     position: absolute;
+     top: 100%;
+     left: 0;
+     z-index: 1000;
+     display: none;
+     float: left;
+     min-width: 10rem;
+     padding: .5rem 0;
+     margin: .125rem 0 0;
+     font-size: 1rem;
+     color: #212529;
+     text-align: left;
+     background-color: #fff;
+     background-clip: padding-box;
+     border: 1px solid rgba(0,0,0,.15);
+     border-radius: .25rem;
+}
+ .voda_wrapper .nav, .voda_wrapper .nav-tabs .nav-item, .voda_wrapper .navbar-nav {
+     margin-bottom: 0;
+}
+ .voda_wrapper .dropdown-item {
+     display: block;
+     width: 100%;
+     padding: .25rem 1.5rem;
+     clear: both;
+     font-weight: 400;
+     color: #212529;
+     text-align: inherit;
+     white-space: nowrap;
+     background-color: transparent;
+     border: 0;
+}
+ .voda_wrapper .dropdown-item:focus, .voda_wrapper .dropdown-item:hover {
+     color: #16181b;
+     background-color: #f8f9fa;
+}
+ .voda_wrapper .dropdown-item:active {
+     color: #fff;
+     background-color: #007bff;
+}
+ .voda_wrapper .dropdown-item:disabled {
+     color: #6c757d;
+     background-color: transparent;
+}
+ .voda_wrapper .nav {
+     display: -ms-flexbox;
+     display: flex;
+     flex-wrap: wrap;
+     padding-left: 0;
+}
+ .voda_wrapper .nav-link, .voda_wrapper .navbar {
+     padding: .5rem 1rem 0rem;
+}
+ .voda_wrapper .nav-link {
+     display: block;
+}
+ .voda_wrapper .nav-tabs {
+     border-bottom: 1px solid #dee2e6;
+}
+ .voda_wrapper .nav-tabs .nav-link {
+     border: 1px solid transparent;
+     border-top-left-radius: .25rem;
+     border-top-right-radius: .25rem;
+}
+ .voda_wrapper .nav-tabs .nav-link:focus, .voda_wrapper .nav-tabs .nav-link:hover {
+     border-color: #e9ecef #e9ecef #dee2e6;
+}
+ .voda_wrapper .nav-tabs .nav-link.active {
+     border-color: #dee2e6 #dee2e6 #fff;
+}
+ 
+ .voda_wrapper .navbar {
+     position: relative;
+     display: -ms-flexbox;
+     display: flex;
+     -ms-flex-wrap: wrap;
+     flex-wrap: wrap;
+     -ms-flex-align: center;
+     align-items: center;
+     -ms-flex-pack: justify;
+     justify-content: space-between;
+}
+ .voda_wrapper .navbar-brand {
+     display: inline-block;
+     padding-top: .3125rem;
+     padding-bottom: .3125rem;
+     margin-right: 1rem;
+     font-size: 1.25rem;
+     line-height: inherit;
+     white-space: nowrap;
+}
+ .voda_wrapper .list-group_parent_1, .voda_wrapper .navbar-nav {
+     display: -ms-flexbox;
+     -ms-flex-direction: column;
+}
+ .voda_wrapper .navbar-nav {
+     display: flex;
+     flex-direction: column;
+     padding-left: 0;
+}
+ .voda_wrapper .navbar-nav .nav-link {
+     padding-right: 0;
+     padding-left: 0;
+}
+ .voda_wrapper .navbar-nav .dropdown-menu {
+     position: static;
+     float: none;
+}
+ .voda_wrapper #ddCircle, .voda_wrapper .mobileheader .content-float-right {
+     float: right;
+}
+ .voda_wrapper .navbar-collapse {
+     -ms-flex-preferred-size: 100%;
+     flex-basis: 100%;
+     -ms-flex-positive: 1;
+     flex-grow: 1;
+     -ms-flex-align: center;
+     align-items: center;
+}
+ .voda_wrapper .navbar-toggler {
+     padding: .25rem .75rem;
+     font-size: 1.25rem;
+     line-height: 1;
+     background-color: transparent;
+     border: 1px solid transparent;
+     border-radius: .25rem;
+}
+ .voda_wrapper .navbar-light .navbar-brand, .voda_wrapper .navbar-light .navbar-brand:focus, .voda_wrapper .navbar-light .navbar-brand:hover {
+     color: rgba(0,0,0,.9);
+}
+ .voda_wrapper .navbar-light .navbar-nav .nav-link {
+     color: rgba(0,0,0,.5);
+}
+ .voda_wrapper .navbar-light .navbar-nav .nav-link:focus, .voda_wrapper .navbar-light .navbar-nav .nav-link:hover {
+     color: rgba(0,0,0,.7);
+}
+ .voda_wrapper .navbar-light .navbar-nav .active>.nav-link {
+     color: rgba(0,0,0,.9);
+}
+ .voda_wrapper .navbar-light .navbar-toggler {
+     color: rgba(0,0,0,.5);
+     border-color: rgba(0,0,0,.1);
+}
+ .voda_wrapper .list-group-item {
+     background-color: #fff;
+}
+ .voda_wrapper .list-group-item:first-child {
+     border-top-left-radius: .25rem;
+     border-top-right-radius: .25rem;
+}
+ .voda_wrapper .list-group-item:last-child {
+     margin-bottom: 0;
+     border-bottom-right-radius: .25rem;
+     border-bottom-left-radius: .25rem;
+}
+ .voda_wrapper .list-group-item:focus, .voda_wrapper .list-group-item:hover {
+     z-index: 1;
+}
+ .voda_wrapper .list-group-item:disabled {
+     color: #6c757d;
+     background-color: #fff;
+}
+ .voda_wrapper .dropdown-item:hover,button {
+     cursor: pointer;
+}
+ .voda_wrapper .d-none {
+     display: none;
+}
+ .voda_wrapper .d-block {
+     display: block;
+}
+ .desktopheader .universalDropdown #selectLocation {
+     border-bottom: 1px solid #fff;
+}
+ @media(min-width:768px) {
+     .voda_wrapper .selectLocationWrapper {
+         margin: 0px 0 0px 0px;
+    }
+     .voda_wrapper .selectLocationWrapper {
+         display: block;
+    }
+     .voda_wrapper .vodarechargepackstatic .selectLocationWrapper {
+         display: flex;
+    }
+     .voda_wrapper .d-md-none {
+         display: none;
+    }
+     .voda_wrapper .d-md-block {
+         display: block;
+    }
+}
+ .voda_wrapper .sr-only {
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     padding: 0;
+     overflow: hidden;
+     clip: rect(0,0,0,0);
+     white-space: nowrap;
+     border: 0;
+}
+ .voda_wrapper .mr-auto {
+     margin-right: auto!important;
+}
+ @media print {
+     *,::after,::before {
+         text-shadow: none;
+         box-shadow: none;
+    }
+     .voda_wrapper a:not(.btn) {
+         text-decoration: underline;
+    }
+     .voda_wrapper img {
+         page-break-inside: avoid;
+    }
+     @page {
+         size: a3;
+    }
+     body {
+         min-width: 992px;
+    }
+     .voda_wrapper .navbar {
+         display: none;
+    }
+}
+/*! Flickity v2.1.2 https://flickity.metafizzy.co ---------------------------------------------- */
+ .voda_wrapper button:focus {
+     outline: dotted 1px;
+     outline: -webkit-focus-ring-color auto 5px;
+     box-shadow: none;
+}
+ .voda_wrapper button:disabled {
+     cursor: default;
+}
+ .voda_wrapper a:hover {
+     text-decoration: none;
+}
+ .voda_wrapper #getappicon {
+     z-index: 5;
+}
+ .voda_wrapper select {
+     width: 120px;
+     z-index: 2;
+     position: relative;
+     color: transparent;
+     background: 0;
+}
+ .voda_wrapper .viewport {
+     border-bottom: 1px solid #fff;
+     position: absolute;
+     padding: 0 18px 0 0;
+     width: 211px;
+     height: 22px;
+     z-index: 1;
+     overflow: hidden;
+     white-space: nowrap;
+     -ms-text-overflow: ellipsis;
+     -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+     font-size: 16px;
+     font-family: "VodafoneLt";
+     margin-top: -17px;
+     margin-left: 32px;
+}
+ .voda_wrapper .desktopheader ul.nav.nav-tabs .nav-item:last-child {
+     width: 245px;
+}
+ .voda_wrapper .desktopheader .viewport:after {
+     z-index: 5;
+     background: url(vodafonebase/images/dropdownArrow.svg) no-repeat;
+     content: "";
+     position: absolute;
+     width: 15px;
+     height: 15px;
+     right: 0;
+     margin-top: 4px;
+}
+ .voda_wrapper #ddCircle {
+     width: 220px;
+     top: 7px;
+}
+ .voda_wrapper .desktopheader select {
+     padding: 0;
+}
+ .voda_wrapper option {
+     color: #000;
+}
+ .voda_wrapper .header-img-margin {
+     width: 20px;
+     height: 20px;
+}
+ .voda_wrapper .search_icon, .voda_wrapper .user_icon {
+     width: 35px;
+     height: 35px;
+}
+ .voda_wrapper nav.navbar.navbar-light.light-blue.lighten-4 {
+     color: #fff;
+}
+ .voda_wrapper select::-ms-expand {
+     display: none;
+}
+ .voda_wrapper select::-ms-value {
+     background: 0;
+}
+ .voda_wrapper .navbar-light .navbar-nav .nav-link {
+     color: #290d0d;
+}
+ .voda_wrapper .navbar-brand {
+     display: inline-block;
+     padding-top: .3125rem;
+     padding-bottom: .3125rem;
+     margin-right: 1rem;
+     font-size: 14px;
+     line-height: inherit;
+     white-space: normal;
+}
+ .voda_wrapper a {
+     cursor: pointer;
+     font-weight: 400;
+     font-style: normal;
+}
+ .voda_wrapper .nav-tabs .nav-link.active {
+     border-top: 0;
+     border-right: 0;
+     border-left: 0;
+     background-color: #f4f5f6;
+     color: #495057;
+}
+/*.voda_wrapper a:hover {
+     color: #fff;
+}
+ */
+ .voda_wrapper {
+     padding: 0;
+}
+ .voda_wrapper .row {
+     margin-left: 0;
+     margin-right: 0;
+}
+ .voda_wrapper .desktopheader .desktop_search_tabs {
+     display: inline-flex;
+     white-space: nowrap;
+}
+ .voda_wrapper .desktopheader .desktop_search_icons {
+     display: inline;
+}
+ .voda_wrapper .desktopheader .desktop_search_icons a {
+     padding-right: 0;
+     margin-left: 25px;
+}
+ .voda_wrapper .desktopheader #home .navbar.navbar-inverse.navbar-light {
+     padding-left: 0;
+     padding-right: 0;
+     background-color: #fff;
+     width: 100%;
+}
+ .voda_wrapper .desktopheader .desktop_search_color {
+     font-family: "VodafoneLt";
+     font-size: 18px;
+     color: #333;
+}
+ .voda_wrapper .fa-angle-right:before {
+     font-size: 25px;
+}
+ .voda_wrapper .revamp-vodafone-logo {
+     width: 60px;
+     height: 60px;
+     margin-top: .5vh;
+}
+ .voda_wrapper .vondaMainMenu .account_button_0, .voda_wrapper .vondaMainMenu .account_button_1 {
+     padding: .6em 2em;
+     font-weight: 700;
+     letter-spacing: 1px;
+}
+ .voda_wrapper .vondaMainMenu .account_button_0 {
+     color: #fff;
+     text-align: center;
+     background: #4a4d4e;
+     border: 0;
+     margin-left: auto;
+     width: 260px;
+     height: 55px;
+     margin-bottom: 20px;
+     margin-right: auto;
+}
+ .voda_wrapper .vondaMainMenu .account_button_0:hover {
+     background: #4a4d4e;
+}
+ .voda_wrapper .vondaMainMenu .account_button_1 {
+     color: #333;
+     background: #fff;
+     border: 1px solid #4a4d4e;
+     width: 260px;
+     height: 55px;
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;
+}
+ .voda_wrapper .dropdown-item {
+     color: #212529;
+     cursor: default;
+}
+ .voda_wrapper .dropdown-menu {
+     width: 1306px;
+     margin: .125rem -.1em 0;
+     background-color: transparent;
+     padding-top: 0;
+     border: 0;
+}
+ .voda_wrapper .dropdown-menu .row {
+     padding-top: 0;
+}
+ .voda_wrapper .revamp-vodafone-logo-mobile {
+     width: 37px;
+     height: 37px;
+}
+ .voda_wrapper .dropdown-item:hover {
+     color: red;
+     background-color: transparent;
+}
+ .voda_wrapper .navbar-toggler.toggler-example {
+     border: 0;
+     outline: 0;
+}
+ .voda_wrapper .desktopheader .desktop_search_color:hover {
+     font-weight: 700;
+}
+ .voda_wrapper .mobileheader .navbar-nav .dropdown-menu {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     border: 0;
+}
+ .voda_wrapper .nav-tabs .nav-link {
+     border: 0;
+}
+ .voda_wrapper .desktopheader select, .voda_wrapper .mobileheader select {
+     -webkit-appearance: none;
+     -ms-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     border: 0 solid #bbb;
+     background-color: transparent;
+     border-radius: 0;
+     position: relative;
+     cursor: pointer;
+     z-index: 10;
+     color: #f7f8f8;
+     outline: 0;
+     text-decoration: underline;
+}
+ .voda_wrapper .mobileheader select {
+     padding: 0 10% 0 9%;
+     margin-right: 35px;
+}
+ .voda_wrapper .nav.nav-tabs, .voda_wrapper .tab-content {
+     padding-right: 0;
+     padding-left: 0;
+}
+ .voda_wrapper .nav.nav-tabs {
+     height: 35px;
+}
+
+ .voda_wrapper {
+     width: 100%;
+     border-top-left-radius: calc(.25rem - 1px);
+     border-top-right-radius: calc(.25rem - 1px);
+     position: relative;
+     height: 100%;
+}
+ .voda_wrapper .logo {
+     padding: 0;
+}
+ .voda_wrapper .postpaid-button-overlay .postpaid-banner.title::last-child {
+     margin-bottom: 40px;
+}
+ @media all and (-ms-high-contrast:none) {
+     .voda_wrapper .dropdown .nav-link {
+         display: block;
+         padding-top: .5rem;
+         padding-bottom: .5rem;
+         padding-left: 0;
+         padding-right: 0;
+    }
+     .voda_wrapper .desktopheader select {
+         margin-left: 0;
+         margin-top: 10px;
+         padding: 2% 8% 0 0;
+    }
+     .voda_wrapper .vondaMainMenu .account_button_0 {
+         color: #fff;
+         background: #4a4d4e;
+         border: 0;
+         min-width: 18.6vw;
+         margin-bottom: 1vw;
+    }
+}
+ .voda_wrapper .img-responsive {
+     margin-left: auto;
+     margin-right: auto;
+}
+ .voda_wrapper .no-padding {
+     padding: 0!important;
+}
+ .voda_wrapper a.dropdownheadermenu {
+     margin-top: 7px;
+}
+ .voda_wrapper a.nav-link1.header-no-border {
+     border-top-left-radius: 0;
+     border-top-right-radius: 0;
+     font-size: 16px;
+     color: #fff;
+     outline: 0;
+     margin: 0 15px 0 7px;
+     text-decoration: none;
+}
+ .voda_wrapper .desktopheader .nav-tabs .nav-link1:hover {
+     color: #d8d9da;
+}
+ .voda_wrapper .desktopheader .nav-tabs .getapp {
+     vertical-align: middle;
+     margin-left: 3px;
+     font-family: "VodafoneLt";
+}
+ .voda_wrapper ::-webkit-input-placeholder {
+     color: #b7b7b7;
+     font-family: "VodafoneLt";
+     font-size: 20px;
+}
+ .voda_wrapper ::-moz-placeholder {
+     color: #9b9b9b ;
+     font-family: "VodafoneRg";
+     font-size: 20px;
+}
+ .voda_wrapper :-ms-input-placeholder {
+     color: #9b9b9b ;
+     font-family: "VodafoneRg";
+     font-size: 20px;
+}
+ .voda_wrapper :-moz-placeholder {
+     color: #9b9b9b ;
+     font-family: "VodafoneRg";
+     font-size: 20px;
+}
+/* Slick CSS */
+ .slick-wrapperA, .slick-wrapperB, .slick-wrapperC, .slick-wrapperD {
+     margin: 0 auto;
+     width: 90%;
+}
+ .slick-wrapperA .slick-prev, .slick-wrapperB .slick-prev, .slick-wrapperC .slick-prev, .slick-wrapperD .slick-prev {
+     height: 33px ;
+     left: -38px;
+}
+ .slick-wrapperA .slick-next, .slick-wrapperB .slick-next, .slick-wrapperC .slick-next, .slick-wrapperD .slick-next {
+     height: 33px ;
+     right: -38px;
+}
+ .slick-wrapperA .slick-slide, .slick-wrapperC .slick-slide {
+     margin: 0 10px ;
+}
+ .slick-wrapperB .slick-slide {
+     margin: 0 5px ;
+}
+ .slick-wrapperD .slick-slide {
+     margin: 0 10px ;
+}
+ .slick-wrapperA .slick-slide {
+     width: 100px;
+}
+ .slick-wrapperB .slick-slide, .slick-wrapperD .slick-slide {
+     width: 200px;
+}
+ .slick-wrapperC .slick-slide {
+     width: 180px;
+}
+ .slick-wrapperE .slick-dots {
+     bottom: 4px ;
+}
+ .slick-prev:before {
+     background: url('/content/dam/vodafoneideadigital/images/commonimages/small-black-previous-arrow.png') no-repeat scroll 0 0;
+     content: "" !important ;
+     display: block;
+     width: 18px;
+     height: 33px;
+}
+ .slick-next:before {
+     background: url('/content/dam/vodafoneideadigital/images/commonimages/small-black-next-arrow.png') no-repeat scroll 0 0;
+     content: "" !important;
+     display: block;
+     width: 18px;
+     height: 33px;
+}
+ .slick-slide {
+     outline: none;
+}
+ .slick-dots li button::before {
+     font-size: 40px ;
+}
+ .slick-wrapperA, .slick-wrapperB, .slick-wrapperC, .slick-wrapperD {
+     margin: 0 auto;
+     width: 90%;
+}
+ .slick-wrapperB .slick-slide {
+     margin: 0 28px ;
+     width: 205px ;
+}
+ .slick-wrapperA .slick-slide, .slick-wrapperC .slick-slide {
+     margin: 0 10px ;
+     width: 200px;
+}
+ .slick-wrapperD .slick-slide {
+     margin: 0 32px ;
+     width: 200px ;
+}
+ .slick-wrapperE {
+     width: 100%;
+}
+ .slick-wrapperE .slick-slide {
+     margin: 0 ;
+}
+ .slick-wrapperE .slick-dots {
+     bottom: 10px;
+}
+ .slick-wrapperE .slick-dots li.slick-active button::before {
+     color: #19b0e6;
+     opacity: 0.75;
+}
+ .slick-wrapperE .slick-dotted.slick-slider {
+     margin-bottom: 0;
+}
+ .slick-wrapperB .slick-prev, .slick-wrapperA .slick-prev {
+     top: 47%;
+}
+ .slick-wrapperB .slick-next, .slick-wrapperA .slick-next {
+     top: 47%;
+}
+ .slick-wrapperD .slick-prev {
+     top: 45%;
+}
+ .slick-wrapperD .slick-next {
+     top: 45%;
+}
+ .slick-wrapperF .slick-slide {
+     width: 162px;
+     margin: 0 25px ;
+}
+ .slick-wrapperF .slick-prev {
+     height: 33px ;
+     left: -16px;
+}
+ .slick-wrapperF .slick-next {
+     height: 33px ;
+     right: -16px;
+}
+ .slick-wrapperG {
+     margin: 0 auto;
+     width: 90%;
+}
+ .slick-slide {
+     margin: 0px 10px 0 0;
+}
+ .slick-initialized {
+     visibility: visible !important;
+}
+ .voda_wrapper span {
+     margin-right: 6px;
+}
+ .voda_wrapper .desktopheader .desktopheader-margindiv1 {
+     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.11);
+}
+ .txtCenter{
+     text-align: center;
+}
+ .voda_wrapper button:focus, .voda_wrapper a:focus{
+     outline:none 
+}
+ @media (min-width: 320px) and (max-width: 640px) {
+     .slick-wrapperA .slick-slide, .slick-wrapperC .slick-slide {
+         margin: 0 10px ;
+    }
+     .slick-wrapperB .slick-slide {
+         margin: 0 5px ;
+    }
+     .slick-wrapperD .slick-slide {
+         margin: 0 10px ;
+    }
+     .slick-wrapperA .slick-slide {
+         width: 100px;
+    }
+     .slick-wrapperB .slick-slide, .slick-wrapperD .slick-slide {
+         width: 200px;
+    }
+     .slick-wrapperC .slick-slide {
+         width: 180px;
+    }
+     .slick-wrapperE .slick-dots {
+         bottom: -3px ;
+    }
+     .slick-wrapperA .slick-prev, .slick-wrapperB .slick-prev, .slick-wrapperC .slick-prev, .slick-wrapperD .slick-prev{
+         left: -20px;
+    }
+     .slick-wrapperA .slick-next, .slick-wrapperB .slick-next, .slick-wrapperC .slick-next, .slick-wrapperD .slick-next {
+         right: -20px;
+    }
+}
+ @media screen and (max-width:330px) {
+     .voda_wrapper .mobileheader i.fa.fa-angle-up {
+         float: right;
+    }
+     .voda_wrapper #navbarSupportedContent1 {
+         margin-top: 15px;
+    }
+     .voda_wrapper ::-webkit-input-placeholder {
+         color: #9b9b9b;
+         font-family: "VodafoneLt";
+         font-size: 16px;
+    }
+     .voda_wrapper ::-moz-placeholder {
+         color: #9b9b9b;
+         font-family: "VodafoneLt";
+         font-size: 16px;
+    }
+     .voda_wrapper :-ms-input-placeholder {
+         color: #9b9b9b;
+         font-family: "VodafoneLt";
+         font-size: 16px;
+    }
+     .voda_wrapper :-moz-placeholder {
+         color: #9b9b9b;
+         font-family: "VodafoneLt";
+         font-size: 16px;
+    }
+     .voda_wrapper .mobileheader .navbar {
+         padding: 15px;
+    }
+     .voda_wrapper .revamp_get_app_logo_icon {
+         left: 22px;
+         position: relative;
+         width: 30px;
+    }
+     .voda_wrapper .navbar-brand {
+         display: inline-block;
+         padding-top: .3125rem;
+         padding-bottom: .3125rem;
+         margin-right: 0;
+         font-size: 15px;
+         line-height: inherit;
+         white-space: normal;
+    }
+     .voda_wrapper .navbar-brand img {
+         height: 37px;
+         width: 37px;
+         margin-left: auto;
+         margin-right: auto;
+    }
+}
+ @media screen and (max-width:375px) and (min-width:331px) {
+     .voda_wrapper .mobileheader .select-wrapper:after {
+         right: 70px;
+    }
+     .voda_wrapper .constructStruct {
+         width: 100% ;
+         margin-left: auto;
+         margin-right: auto;
+    }
+     .voda_wrapper #navbarSupportedContent1 {
+         margin-top: 15px;
+    }
+     .voda_wrapper ::-webkit-input-placeholder {
+         color: #9b9b9b;
+         font-family: "VodafoneLt";
+         font-size: 16px;
+    }
+     .voda_wrapper ::-moz-placeholder {
+         color: #9b9b9b;
+         font-family: "VodafoneLt";
+         font-size: 16px;
+    }
+     .voda_wrapper :-ms-input-placeholder {
+         color: #9b9b9b;
+         font-family: "VodafoneLt";
+         font-size: 16px;
+    }
+     .voda_wrapper :-moz-placeholder {
+         color: #9b9b9b;
+         font-family: "VodafoneLt";
+         font-size: 16px;
+    }
+     .voda_wrapper .mobileheader .navbar {
+         padding: 15px;
+    }
+     .voda_wrapper .revamp_get_app_logo_icon {
+         left: 22px;
+         position: relative;
+         width: 30px;
+    }
+     .voda_wrapper .navbar-brand {
+         display: inline-block;
+         padding-top: .3125rem;
+         padding-bottom: .3125rem;
+         margin-right: 0;
+         font-size: 15px;
+         line-height: inherit;
+         white-space: normal;
+    }
+     .voda_wrapper .navbar-brand img {
+         height: 37px;
+         width: 37px;
+         margin-left: auto;
+         margin-right: auto;
+    }
+}
+ @media screen and (max-width:425px) and (min-width:376px) {
+     .voda_wrapper #navbarSupportedContent1 {
+         margin-top: 15px;
+    }
+     .voda_wrapper ::-webkit-input-placeholder {
+         color: #b7b7b7;
+         font-family: "VodafoneLt";
+         font-size: 18px;
+    }
+     .voda_wrapper ::-moz-placeholder {
+         color: #b7b7b7;
+         font-family: "VodafoneLt";
+         font-size: 18px;
+    }
+     .voda_wrapper :-ms-input-placeholder {
+         color: #b7b7b7;
+         font-family: "VodafoneLt";
+         font-size: 18px;
+    }
+     .voda_wrapper :-moz-placeholder {
+         color: #b7b7b7;
+         font-family: "VodafoneLt";
+         font-size: 18px;
+    }
+     .voda_wrapper .constructStruct {
+         width: 100% ;
+         margin-left: auto;
+         margin-right: auto;
+    }
+     .voda_wrapper .mobileheader .navbar {
+         padding: 15px;
+    }
+     .voda_wrapper .revamp_get_app_logo_icon {
+         left: 23px;
+         position: relative;
+         width: 30px;
+    }
+     .voda_wrapper .navbar-brand {
+         display: inline-block;
+         padding-top: .3125rem;
+         padding-bottom: .3125rem;
+         margin-right: 0;
+         font-size: 15px;
+         line-height: inherit;
+         white-space: normal;
+    }
+     .voda_wrapper .navbar-brand img {
+         height: 37px;
+         width: 37px;
+         margin-left: auto;
+         margin-right: auto;
+    }
+}
+ @media screen and (max-width:575px) and (min-width:426px) {
+     .voda_wrapper .constructStruct {
+         width: 100% ;
+         margin-left: auto;
+         margin-right: auto;
+    }
+     .voda_wrapper #navbarSupportedContent1 {
+         margin-top: 15px;
+    }
+     .voda_wrapper .mobileheader select {
+         padding: 0 10% 0 5%;
+    }
+     .voda_wrapper ::-webkit-input-placeholder {
+         color: #b7b7b7;
+         font-family: "VodafoneLt";
+         font-size: 18px;
+    }
+     .voda_wrapper ::-moz-placeholder {
+         color: #b7b7b7;
+         font-family: "VodafoneLt";
+         font-size: 18px;
+    }
+     .voda_wrapper :-ms-input-placeholder {
+         color: #b7b7b7;
+         font-family: "VodafoneLt";
+         font-size: 18px;
+    }
+     .voda_wrapper :-moz-placeholder {
+         color: #b7b7b7;
+         font-family: "VodafoneLt";
+         font-size: 18px;
+    }
+     .voda_wrapper .mobileheader .navbar {
+         padding: 17px 20px;
+    }
+     .voda_wrapper .revamp_get_app_logo_icon {
+         left: 8%;
+         position: relative;
+         width: 30px;
+    }
+     .voda_wrapper .navbar-brand {
+         display: inline-block;
+         padding-top: .3125rem;
+         padding-bottom: .3125rem;
+         margin-right: 0;
+         font-size: 15px;
+         line-height: inherit;
+         white-space: normal;
+    }
+     .voda_wrapper .navbar-brand img {
+         height: 37px;
+         width: 37px;
+         margin-left: auto;
+         margin-right: auto;
+    }
+}
+ @media screen and (max-width:767px) {
+     .voda_wrapper .submenu-link {
+         background-color: #fafafa;
+    }
+     .voda_wrapper .dropdown-item:hover {
+         color: #000;
+         background-color: #fafafa;
+    }
+     .voda_wrapper button.account_button_0.dropdown-item {
+         color: #fff;
+         text-align: center;
+         background: #4a4d4e;
+         border: 0;
+         margin-left: auto;
+         height: 40px;
+         margin-right: auto;
+    }
+     .voda_wrapper button.account_button_1.dropdown-item {
+         color: #333;
+         background: #fff;
+         border: 1px solid #4a4d4e;
+         height: 40px;
+         text-align: center;
+         margin-left: auto;
+         margin-bottom: 10px;
+         margin-right: auto;
+    }
+     .voda_wrapper .get_app_link {
+         margin-left: auto;
+    }
+     .voda_wrapper .mobileheader .navbar {
+         padding: 15px;
+    }
+     .voda_wrapper #getappicon {
+         float: right;
+         margin-right: 0;
+    }
+     .voda_wrapper .revamp_get_app_logo_icon {
+         left: 5px;
+         position: relative;
+         width: 30px;
+         top: 0;
+    }
+     .voda_wrapper #ddCircle_mobile {
+         float: right;
+         width: 60px;
+         margin-right: 35px;
+         margin-top: 6px;
+         color: transparent;
+    }
+     .voda_wrapper .mobileheader select {
+         padding: 0;
+         margin-right: 5px;
+    }
+     .voda_wrapper .viewport {
+         color: #000;
+         border-bottom: 1px solid #000;
+         text-decoration: none;
+         position: absolute;
+         padding: 0 10px 0 0;
+         width: 60px;
+         height: auto;
+         z-index: 1;
+         overflow: hidden;
+         white-space: nowrap;
+         right: 36px;
+         -ms-text-overflow: ellipsis;
+         -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
+         font-size: 12px;
+         font-family: "VodafoneLt";
+         margin: -24px 35px;
+    }
+     .voda_wrapper .viewport:after {
+         z-index: 5;
+         content: "\f107";
+         position: absolute;
+         font-family: FontAwesome;
+         width: 18px;
+         height: 18px;
+         font-size: 14px;
+         right: -10px;
+         margin-top: -1px;
+    }
+     .voda_wrapper select {
+         opacity: 1;
+    }
+     .voda_wrapper .mobileheader i.fa.fa-angle-up {
+         float: right;
+    }
+     .voda_wrapper .card-deck .teaser:second-child {
+         margin-left: 0;
+    }
+     .voda_wrapper .constructStruct {
+         width: 100%;
+         margin-left: 0;
+         margin-right: 0;
+    }
+     .voda_wrapper .fa-angle-up:before {
+         font-size: 25px;
+    }
+     .voda_wrapper .navbar-brand {
+         display: inline-block;
+         padding-top: .3125rem;
+         padding-bottom: .3125rem;
+         margin-right: 1rem;
+         font-size: 12px;
+         line-height: inherit;
+         white-space: normal;
+    }
+}
+ @media screen and (max-width:767px) and (min-width:576px) {
+     .voda_wrapper .revamp_get_app_logo_icon {
+         left: 5vw;
+    }
+     .voda_wrapper .mobileheader .select-wrapper:after {
+         right: 80px;
+         top: 24px;
+    }
+     .voda_wrapper #navbarSupportedContent1 {
+         margin-top: 20px;
+    }
+     .voda_wrapper .mobileheader .navbar {
+         padding: 17px 20px;
+    }
+     .voda_wrapper ::-webkit-input-placeholder {
+         color: #b7b7b7;
+         font-family: "VodafoneLt";
+         font-size: 20px;
+    }
+     .voda_wrapper ::-moz-placeholder {
+         color: #b7b7b7;
+         font-family: "VodafoneLt";
+         font-size: 20px;
+    }
+     .voda_wrapper :-ms-input-placeholder {
+         color: #b7b7b7;
+         font-family: "VodafoneLt";
+         font-size: 20px;
+    }
+     .voda_wrapper :-moz-placeholder {
+         color: #b7b7b7;
+         font-family: "VodafoneLt";
+         font-size: 20px;
+    }
+     .voda_wrapper .constructStruct {
+         max-width: 100% ;
+         margin-left: auto;
+         margin-right: auto;
+    }
+     .voda_wrapper .desktopheader .nav-tabs .nav-link {
+         font-size: 14px;
+         padding: 0 10px;
+    }
+     .voda_wrapper .desktopheader ul.nav.nav-tabs .nav-item:first-child {
+         padding-left: 2em;
+    }
+     .voda_wrapper .desktopheader select {
+         padding: 2.5% 15% 0 10%;
+         width: 90%;
+    }
+     .voda_wrapper nav.navbar.navbar-inverse.navbar-light {
+         padding: 0;
+    }
+     .voda_wrapper .revamp-vodafone-logo {
+         width: 45px;
+         height: 45px;
+         margin-top: 12px;
+    }
+     .voda_wrapper .desktopheader .desktop_search_color {
+         font-size: 16px;
+    }
+     .voda_wrapper .desktop_search_icons.nav.navbar-nav.navbar-right,a.dropdownheadermenu {
+         margin-top: 15px;
+    }
+     .voda_wrapper .mr-auto {
+         margin-right: 0!important;
+    }
+     .voda_wrapper .desktopheader .desktopheader-margindiv {
+         height: 70px;
+    }
+     .voda_wrapper .desktopheader .dropdown .show {
+         margin-top: 10px;
+    }
+}
+ @media screen and (max-width:991px) and (min-width:768px) {
+     .voda_wrapper .selectLocationWrapper {
+         padding: 0 15px 0px;
+    }
+     .voda_wrapper .constructStruct, .voda_wrapper .mr-auto {
+         margin-right: auto!important;
+    }
+     .voda_wrapper .viewport,a.nav-link1.header-no-border {
+         font-size: 14px;
+    }
+     .voda_wrapper .desktopheader ul.nav.nav-tabs .nav-item:last-child {
+         width: 120px;
+    }
+     .voda_wrapper .desktopheader .desktop_search_icons a {
+         padding-right: 0;
+         margin-left: 20px;
+    }
+     .voda_wrapper #ddCircle {
+         float: right;
+         width: 118px;
+    }
+     .voda_wrapper .revamp_get_app_logo_icon {
+         width: 20px;
+         position: relative;
+         left: -1px;
+         top: 5px;
+    }
+     .voda_wrapper .cover, .voda_wrapper .viewport {
+         position: absolute;
+    }
+     .voda_wrapper .viewport {
+         margin-left: 18px;
+         padding: 0 18px 0 2px;
+         width: 100px;
+         height: auto;
+         z-index: 1;
+         overflow: hidden;
+         white-space: nowrap;
+         -ms-text-overflow: ellipsis;
+         -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
+         font-family: "VodafoneLt";
+         margin-top: -17px;
+    }
+     .voda_wrapper .desktopheader .viewport:before {
+         height: 18px;
+         width: 18px;
+         left: 0;
+    }
+     .voda_wrapper ::-webkit-input-placeholder {
+         color: #b7b7b7;
+         font-family: "VodafoneLt";
+         font-size: 20px;
+    }
+     .voda_wrapper ::-moz-placeholder {
+         color: #b7b7b7;
+         font-family: "VodafoneLt";
+         font-size: 20px;
+    }
+     .voda_wrapper :-ms-input-placeholder {
+         color: #b7b7b7;
+         font-family: "VodafoneLt";
+         font-size: 20px;
+    }
+     .voda_wrapper :-moz-placeholder {
+         color: #b7b7b7;
+         font-family: "VodafoneLt";
+         font-size: 20px;
+    }
+     .voda_wrapper .constructStruct {
+         max-width: 708px;
+         margin-left: auto;
+    }
+     .voda_wrapper .desktopheader .nav-tabs .nav-link {
+         font-size: 14px;
+         padding: 0 10px;
+    }
+     .voda_wrapper .selectLocationWrapper .dtmapplink {
+         margin-top: 0;
+    }
+     .voda_wrapper .myaccount-hyperlinks {
+         width: 177px;
+         height: 307px;
+         background: #fff;
+         margin-top: 43px;
+         padding-top: 15px;
+    }
+     .voda_wrapper .desktopheader ul.nav.nav-tabs .nav-item:first-child {
+         padding-left: 2em;
+    }
+     .voda_wrapper .desktopheader select {
+         padding: 2.5% 15% 0 10%;
+         width: 83%;
+    }
+     .voda_wrapper nav.navbar.navbar-inverse.navbar-light {
+         padding: 0;
+    }
+     .voda_wrapper .revamp-vodafone-logo {
+         width: 45px;
+         height: 45px;
+         margin-top: 12px;
+    }
+     .voda_wrapper .desktopheader .desktop_search_color {
+         font-size: 16px;
+    }
+     .voda_wrapper .desktop_search_icons.nav.navbar-nav.navbar-right,a.dropdownheadermenu {
+         margin-top: 0px;
+    }
+     .voda_wrapper .desktopheader .desktopheader-margindiv {
+         height: 70px;
+    }
+     .voda_wrapper .desktopheader .dropdown .show {
+         margin-top: 10px;
+         display: block;
+         top: 50px;
+    }
+     .voda_wrapper .vondaMainMenu .account_button_0, .voda_wrapper .vondaMainMenu .account_button_1 {
+         width: 160px;
+         height: 45px;
+         text-align: center;
+         padding: 0;
+         margin: auto auto 20px;
+    }
+     .voda_wrapper .cover {
+         top: 105px;
+    }
+     .voda_wrapper .backslide-ribbon {
+         height: 43px;
+         background-color: #f3f3f3;
+    }
+}
+ @media (min-width: 768px) and (max-width: 1024px) {
+     .slick-wrapperA .slick-slide {
+         width: 250px;
+    }
+     .slick-wrapperB .slick-slide {
+         margin: 0 9px ;
+         width: 205px ;
+    }
+     .slick-wrapperC {
+         width: 80%;
+    }
+     .slick-wrapperC .slick-slide {
+         width: 200px;
+    }
+     .slick-wrapperD .slick-slide {
+         margin: 0 13px ;
+    }
+     .slick-prev, .slick-next {
+         display: block;
+    }
+}
+ @media screen and (max-width:1305px) and (min-width:991px) {
+     .voda_wrapper .dropdown-menu {
+         font-size: 14px;
+    }
+     .voda_wrapper .constructStruct {
+         margin-left: auto;
+         margin-right: auto;
+    }
+     .voda_wrapper .myaccount-hyperlinks {
+         width: 241px;
+         height: 349px;
+         background: #fff;
+         margin-top: 46px;
+         padding-top: 15px;
+    }
+     .voda_wrapper .vondaMainMenu .account_button_0, .voda_wrapper .vondaMainMenu .account_button_1 {
+         text-align: center;
+         width: 200px;
+         margin: auto auto 20px;
+         height: 45px;
+         padding: 0;
+    }
+     .voda_wrapper .backslide-ribbon {
+         height: 46px;
+         background-color: #f3f3f3;
+    }
+}
+ @media screen and (max-width:1440px) and (min-width :1306px) {
+     .voda_wrapper .constructStruct {
+         max-width: 1306px;
+         margin-left: auto;
+         margin-right: auto;
+         width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+	.padding-left-12{
+		padding-left: 12px !important;
+	}	
+}

@@ -1,0 +1,242 @@
+.IR-singleCountry.flx_mod,
+.flx_mod {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.IR-singleCountry.flx_start {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+.IR-singleCountry .ir_col {
+    width: 33.33%;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    position: relative;
+    margin: 0 5px;
+}
+.IR-singleCountry .img_col {
+    width: 48px;
+    height: 48px;
+    margin: 0 16px 0 0;
+}
+.IR-singleCountry .img_col img {
+    width: 48px;
+    height: 48px;
+}
+.IR-singleCountry .footer_title {
+    width: 100%;
+}
+h3.IRTravel {
+    font-size: 20px;
+    line-height: 32px;
+    font-family: VodafoneRgBd;
+    color: #333;
+    margin: 0;
+}
+p.Title-Copy {
+    font-size: 18px;
+    line-height: 24px;
+    color: #333;
+}
+p.Title-Copy a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #f25e04;
+    text-decoration: underline;
+}
+p.Title-Copy a:hover {
+    color: #f25e04;
+    text-decoration: underline;
+}
+.IR-singleCountry .ir_col:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 1px;
+    height: 50%;
+    background-color: #ccc;
+}
+.IR-singleCountry .ir_col:nth-last-child(1):after {
+    content: none;
+}
+.IR-singleCountry br {
+    display: none;
+}
+div#IR-conflictScenrio {
+    width: 600px;
+    margin: auto;
+}
+div#IR-conflictScenrio .modal-header {
+    padding: 0;
+    border-bottom: none;
+}
+div#IR-conflictScenrio h1.modal-title {
+    color: #333;
+    font-size: 28px;
+    line-height: 32px;
+}
+div#IR-conflictScenrio .modal-body p,
+div#IR-conflictScenrio h1.modal-title {
+    margin: 0 0 24px 0;
+}
+div#IR-conflictScenrio .modal-body {
+    padding: 0;
+}
+div#IR-conflictScenrio .modal-footer {
+    justify-content: flex-start;
+    border-top: none;
+    padding: 0;
+}
+div#IR-conflictScenrio .modal-content {
+    padding: 24px 24px 32px 32px;
+    position: relative;
+}
+div#IR-conflictScenrio .modal-footer button.btn.btn-dark {
+    min-width: 136px;
+    border-radius: 4px;
+    line-height: 48px;
+    padding: 0;
+    font-family: VodafoneRgBd;
+    font-size: 18px;
+}
+div#IR-conflictScenrio .modal-header button,
+div#IR-conflictScenrio .modal-header button:before {
+    color: #fff;
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    margin: 0;
+    width: 32px;
+    height: 32px;
+}
+div#IR-conflictScenrio .modal-header button.close:before {
+    top: 0;
+    right: 0;
+    padding: 0;
+    background-image: url(../images/close.png);
+    background-size: 90%;
+    z-index: 361;
+    content: '';
+    opacity: 1;
+    background-repeat: no-repeat;
+}
+div#IR-conflictScenrio .modal-body p {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/**** Small devices (small landscape phones, 575.98px and down) Start ****/
+
+
+/**** Small devices (landscape phones, 576px and up) End ****/
+
+
+/**** Medium devices (tablets, 768px and up) Start ****/
+
+@media (max-width: 575px) {
+    .IR-singleCountry .IRTravel {
+        line-height: 24px;
+    }
+    .IR-singleCountry .Title-Copy {
+        font-size: 14px;
+        line-height: 16px;
+    }
+	#IR-conflictScenrio.modal .modal-dialog {
+		   max-width: 100%;
+		padding: 0;
+		margin: 0;
+		}
+    div#IR-conflictScenrio h1.modal-title {
+        color: #333;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: VodafoneRgBd;
+    }
+    div#IR-conflictScenrio .modal-body p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+	
+    div#IR-conflictScenrio .modal-body p,
+    div#IR-conflictScenrio h1.modal-title {
+        margin: 24px 0 0 0;
+    }
+	div#IR-conflictScenrio .modal-body p{
+		margin: 8px 0 32px 0;
+	}
+    .IR-singleCountry.flx_start {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .IR-singleCountry .ir_col {
+        width: 100%;
+        margin: 0 0 29px 0;
+    }
+    .IR-singleCountry .ir_col:after {
+        content: none;
+    }
+    .IR-singleCountry br {
+        display: block;
+    }
+    div#IR-conflictScenrio {
+        width: 100%;
+        margin: auto;
+    }
+    div#IR-conflictScenrio .modal-content {
+        padding: 16px 16px 24px;
+        position: relative;
+    }
+    div#IR-conflictScenrio .modal-footer button.btn.btn-dark {
+        width: 100%;
+        border-radius: 4px;
+        line-height: 48px;
+        padding: 0;
+        font-family: VodafoneRgBd;
+        font-size: 16px;
+    }
+    div#IR-conflictScenrio .modal-header button,
+    div#IR-conflictScenrio .modal-header button:before {
+        color: #fff;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        margin: 0;
+        width: 16px;
+        height: 16px;
+    }
+}
+@media (max-width: 768px) {}
+
+/**** Medium devices (tablets, 768px and up) End ****/
+
+
+/**** Large devices (desktops, 992px and up) Start ****/
+
+@media (min-width: 992px) {}
+
+/**** Large devices (desktops, 992px and up) End ****/
+
+
+/**** Extra large devices (large desktops, 1200px and up) Start ****/
+
+@media (min-width: 1200px) {}
+
+/**** Extra large devices (large desktops, 1200px and up) End ****/
